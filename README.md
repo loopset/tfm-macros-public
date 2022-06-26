@@ -1,2 +1,2 @@
 # tfm-macros-public
-Macros esenciais para a realización do TFM sobre a nova medida da lonxitude de dispersión neutrón-neutrón
+Essencial macros needed to execute the sensitibity analysis on a new measurement of the neutron-neutron scattering length.
