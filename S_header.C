@@ -867,8 +867,8 @@ void include_statistical_error(TGraphAsymmErrors* g, Bool_t rewrite_error=false)
 		Double_t sqrt_error { TMath::Sqrt(Y)};
 		if(!rewrite_error)
 		{
-			g->SetPointEYlow(i, EYLow + sqrt_error);
-			g->SetPointEYhigh(i, EYHigh + sqrt_error);
+			g->SetPointEYlow(i, TMath::Sqrt(EYLow*EYLow + sqrt_error*sqrt_error));
+			g->SetPointEYhigh(i, TMath::Sqrt(EYHigh*EYHigh + sqrt_error*sqrt_error));
 		}
 		else//if true replace errors statistical ones
 		{
